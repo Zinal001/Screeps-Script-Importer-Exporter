@@ -17,7 +17,7 @@ using System.Net;
 using System.IO;
 using Zinal.Screeps.ScriptAPI;
 
-namespace Screeps
+namespace Demo
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

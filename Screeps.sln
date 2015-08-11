@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Screeps", "Screeps\Screeps.csproj", "{691EB905-552C-4F3D-AE78-F41C4898897E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{691EB905-552C-4F3D-AE78-F41C4898897E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreepsScriptAPI", "ScreepsScriptAPI\ScreepsScriptAPI.csproj", "{3341859A-7EA8-43DB-88BE-A0F7D7468393}"
 EndProject
