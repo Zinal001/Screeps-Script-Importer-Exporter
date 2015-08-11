@@ -1,0 +1,27 @@
+﻿<Window x:Class="Screeps.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Screeps Script Importer / Exporter" Height="151" Width="324" WindowStyle="ToolWindow" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="46*" />
+            <ColumnDefinition Width="113*"/>
+            <ColumnDefinition Width="159*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="62*" />
+        </Grid.RowDefinitions>
+        <TextBox Grid.ColumnSpan="2" Height="22" HorizontalAlignment="Stretch" Margin="10,4,6,4" Name="txtPath" VerticalAlignment="Center" Width="Auto" MouseDoubleClick="txtPath_MouseDoubleClick" Grid.Column="1" />
+
+        <TextBox Grid.Row="1" Grid.ColumnSpan="2" Height="22" HorizontalAlignment="Stretch" Margin="10,4,6,4" Name="txtBranch" VerticalAlignment="Center" Width="Auto" Text="dev" TextAlignment="Center" Grid.Column="1" />
+
+        <Button Content="Import" Height="23" HorizontalAlignment="Center" Margin="42,20" Name="btnGet" VerticalAlignment="Center" Width="75" Grid.Row="2" Click="btnGet_Click" Grid.ColumnSpan="2" ToolTip="Import scripts into local folder" />
+        <Button Content="Export" Height="23" HorizontalAlignment="Center" Margin="42,20" Name="btnPost" VerticalAlignment="Center" Width="75" Grid.Row="2" Grid.Column="2" Click="btnPost_Click" ToolTip="Export local scripts to Screeps" />
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Folder:" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="1" x:Name="textBlock1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Branch:" VerticalAlignment="Center"/>
+        <ProgressBar x:Name="pbWorking" Height="15" Margin="5,0,5,3" Grid.Row="2" VerticalAlignment="Bottom" Grid.ColumnSpan="3" IsIndeterminate="True" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
